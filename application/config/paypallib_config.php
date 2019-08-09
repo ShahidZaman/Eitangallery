@@ -1,0 +1,27 @@
+<?php  if (!defined('BASEPATH')) exit('No direct script access allowed');
+
+// ------------------------------------------------------------------------
+// Paypal IPN Class
+// ------------------------------------------------------------------------
+
+// Use PayPal on Sandbox or Live
+$config['sandbox'] = FALSE; // FALSE for live environment
+//$config['sandbox'] = TRUE;
+// PayPal Business Email ID
+
+$config['business'] = 'stela@bromide.co.il';
+
+//$config['business'] = 'demo1.eithan@gmail.com';
+
+
+// If (and where) to log ipn to file
+$config['paypal_lib_ipn_log_file'] = BASEPATH . 'logs/paypal_ipn.log';
+$config['paypal_lib_ipn_log'] = TRUE;
+
+// Where are the buttons located at 
+$config['paypal_lib_button_path'] = 'buttons';
+
+// What is the default currency?
+$config['paypal_lib_currency_code'] = 'USD';
+
+?>
